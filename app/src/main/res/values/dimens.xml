@@ -5,4 +5,9 @@
 
     // tabs
     <dimen name="tabs_radius">16dp</dimen>
+    
+    //itemAdvertCard
+    <dimen name="itemAdvertCard_height">112dp</dimen>
+    <dimen name="itemAdvertCard_width">300dp</dimen>
+    <dimen name="itemAdvertCard_radius">10dp</dimen>
 </resources>

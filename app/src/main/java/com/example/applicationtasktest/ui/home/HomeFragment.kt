@@ -10,6 +10,7 @@ class HomeFragment : BaseBindingFragment<FragmentHomeBinding>() {
 
     override fun init() {
 
+
         homeViewModel.text.observe(viewLifecycleOwner) {
 //            binding.textHome.text = it
         }
