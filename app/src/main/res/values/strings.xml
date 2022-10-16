@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">ApplicationTaskTest</string>
+    <string name="app_name">Тестовое задание</string>
     <string name="title_menu">Меню</string>
     <string name="title_profile">Профиль</string>
     <string name="title_shopping">Корзина</string>
@@ -10,4 +10,6 @@
     <string name="tab_4">Напитки</string>
     <string name="tab_5">Роллы</string>
     <string name="tab_6">Стрипсы</string>
+    <string name="Naming">Наименование</string>
+    <string name="price">от 555 р</string>
 </resources>

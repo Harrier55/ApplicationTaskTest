@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,7 +8,6 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
 
         <ImageView
             android:id="@+id/image_main_iv"
@@ -27,9 +25,9 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="176dp"
             android:layout_marginTop="16dp"
-            android:text="Наименование"
-            android:textSize="16sp"
             android:fontFamily="sans-serif-black"
+            android:text="@string/Naming"
+            android:textSize="16sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -40,8 +38,8 @@
             android:layout_marginStart="176dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="16dp"
-            android:text="TextView"
             android:maxLines="4"
+            android:text=""
             android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -54,11 +52,11 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
-           android:padding="5dp"
-            android:text="от 555 р"
+            android:background="@drawable/button_shape"
+            android:padding="5dp"
+            android:text="@string/price"
             android:textColor="@color/item_price_text_color"
             android:textSize="13sp"
-            android:background="@drawable/button_shape"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/description_tv" />
     </androidx.constraintlayout.widget.ConstraintLayout>

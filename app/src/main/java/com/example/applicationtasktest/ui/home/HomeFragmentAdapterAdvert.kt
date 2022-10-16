@@ -10,7 +10,7 @@ import com.bumptech.glide.Glide
 import com.example.applicationtasktest.R
 import com.example.applicationtasktest.domain.AdvertEntity
 
-class HomeFragmentAdapterAdvert() : RecyclerView.Adapter<HomeFragmentAdapterAdvert.ItemViewHolder>() {
+class HomeFragmentAdapterAdvert: RecyclerView.Adapter<HomeFragmentAdapterAdvert.ItemViewHolder>() {
 
     private var listItems = mutableListOf<AdvertEntity>()
 

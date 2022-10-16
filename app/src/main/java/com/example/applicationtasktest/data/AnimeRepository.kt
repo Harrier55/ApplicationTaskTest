@@ -34,7 +34,7 @@ class AnimeRepository(private val apiService: Api) : AnimeItemImpl {
             }
 
         } catch (e: Exception) {
-            Log.d("@@@", "onFailure: ${e.toString()}")
+            Log.d("@@@", "onFailure: $e")
         }
     }
 

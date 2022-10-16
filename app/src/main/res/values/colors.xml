@@ -8,6 +8,8 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
+    <color name="color_main">#FD3A69</color>
+
     <color name="tabs_background">#34FD3A69</color>
     <color name="tabs_text_selected_color">#FD3A69</color>
     <color name="tabs_text_color">#C3C4C9</color>
@@ -16,3 +18,4 @@
     <color name="item_price_stroke">#FD3A69</color>
     <color name="item_price_text_color">#FD3A69</color>
 </resources>
+
