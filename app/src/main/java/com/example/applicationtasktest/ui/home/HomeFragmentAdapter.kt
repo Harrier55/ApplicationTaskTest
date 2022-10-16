@@ -1,27 +1,45 @@
 package com.example.applicationtasktest.ui.home
 
+import android.annotation.SuppressLint
+import android.content.Context
+import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
+import com.example.applicationtasktest.R
+import com.example.applicationtasktest.domain.AdvertEntity
 
-class HomeFragmentAdapter: RecyclerView.Adapter<HomeFragmentAdapter.ItemViewHolder>() {
+class HomeFragmentAdapter() : RecyclerView.Adapter<HomeFragmentAdapter.ItemViewHolder>() {
 
-    override fun getItemCount(): Int {
-       return 10
+    private var listItems = mutableListOf<AdvertEntity>()
+
+    @SuppressLint("NotifyDataSetChanged")
+    fun updateListItems(list: List<Int>) {
+        this.listItems = list as MutableList<AdvertEntity>
+        notifyDataSetChanged()
     }
 
+    override fun getItemCount() = 5
+
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemViewHolder {
-        TODO("Not yet implemented")
+        val itemView =
+            LayoutInflater.from(parent.context).inflate(R.layout.item_advert, parent, false)
+        return ItemViewHolder(itemView)
     }
 
     override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
-        TODO("Not yet implemented")
+       Glide.with(holder.itemView.context)
+           .load(R.drawable.foto_free)
+           .into(holder.imageItemAdvert)
+
     }
 
 
-
-    class ItemViewHolder(itemView: View):RecyclerView.ViewHolder(itemView){
-
+    class ItemViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+        var imageItemAdvert:ImageView = itemView.findViewById(R.id.item_advert_card_image_view)
     }
 }
 

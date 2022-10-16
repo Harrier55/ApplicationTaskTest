@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.google.android.material.card.MaterialCardView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="@dimen/itemAdvertCard_width"
     android:layout_height="@dimen/itemAdvertCard_height"
-   android:layout_margin="5dp"
+    android:layout_margin="5dp"
+
     app:cardCornerRadius="@dimen/itemAdvertCard_radius"
-    app:strokeWidth="1dp"
-    app:strokeColor="@color/tabs_background">
+    app:strokeColor="@color/tabs_background"
+    app:strokeWidth="1dp">
 
     <ImageView
-        android:id="@+id/item_advert_card_text_view"
+        android:id="@+id/item_advert_card_image_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/foto_free"/>
+        android:src="@drawable/foto_free" />
 
 </com.google.android.material.card.MaterialCardView>

@@ -35,6 +35,12 @@ android {
 }
 
 dependencies {
+    // Koin
+    implementation 'io.insert-koin:koin-core:3.2.1'
+    implementation 'io.insert-koin:koin-android:3.2.1'
+
+    //glade
+    implementation 'com.github.bumptech.glide:glide:4.14.2'
 
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.5.1'
