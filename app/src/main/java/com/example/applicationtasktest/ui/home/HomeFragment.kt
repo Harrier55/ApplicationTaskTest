@@ -17,6 +17,10 @@ class HomeFragment : BaseBindingFragment<FragmentHomeBinding>() {
         binding.recyclerMain.layoutManager=LinearLayoutManager(context,LinearLayoutManager.VERTICAL,false)
         binding.recyclerMain.adapter = recyclerAdapterMain
 
+        homeViewModel.listAnimeEntity.observe(viewLifecycleOwner){
+            recyclerAdapterMain.updateListItems(it)
+        }
+
         // RV AdvertList
         binding.recyclerAdvert.layoutManager = LinearLayoutManager(context,LinearLayoutManager.HORIZONTAL,false)
         binding.recyclerAdvert.adapter = recyclerAdapterAdvert
