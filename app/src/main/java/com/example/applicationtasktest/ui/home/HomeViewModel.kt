@@ -1,13 +1,14 @@
 package com.example.applicationtasktest.ui.home
 
-import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.example.applicationtasktest.data.AdvertRepository
+import com.example.applicationtasktest.domain.AdvertEntity
 
-class HomeViewModel : ViewModel() {
+class HomeViewModel(private val repository: AdvertRepository) : ViewModel() {
 
-    private val _text = MutableLiveData<String>().apply {
-        value = "This is home Fragment"
+     val listAdvertEntity = MutableLiveData<List<AdvertEntity>>().apply {
+        value = repository.getListAdvertEntity()
     }
-    val text: LiveData<String> = _text
+
 }

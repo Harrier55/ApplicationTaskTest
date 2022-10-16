@@ -1,7 +1,6 @@
 package com.example.applicationtasktest.ui.home
 
 import android.annotation.SuppressLint
-import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -11,18 +10,17 @@ import com.bumptech.glide.Glide
 import com.example.applicationtasktest.R
 import com.example.applicationtasktest.domain.AdvertEntity
 
-class HomeFragmentAdapter() : RecyclerView.Adapter<HomeFragmentAdapter.ItemViewHolder>() {
+class HomeFragmentAdapterAdvert() : RecyclerView.Adapter<HomeFragmentAdapterAdvert.ItemViewHolder>() {
 
     private var listItems = mutableListOf<AdvertEntity>()
 
     @SuppressLint("NotifyDataSetChanged")
-    fun updateListItems(list: List<Int>) {
+    fun updateListItems(list: List<AdvertEntity>) {
         this.listItems = list as MutableList<AdvertEntity>
         notifyDataSetChanged()
     }
 
-    override fun getItemCount() = 5
-
+    override fun getItemCount() = listItems.size
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemViewHolder {
         val itemView =
@@ -32,11 +30,9 @@ class HomeFragmentAdapter() : RecyclerView.Adapter<HomeFragmentAdapter.ItemViewH
 
     override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
        Glide.with(holder.itemView.context)
-           .load(R.drawable.foto_free)
+           .load(listItems[position].advertImage)
            .into(holder.imageItemAdvert)
-
     }
-
 
     class ItemViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         var imageItemAdvert:ImageView = itemView.findViewById(R.id.item_advert_card_image_view)

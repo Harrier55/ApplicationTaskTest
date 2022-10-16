@@ -4,7 +4,6 @@
     android:layout_width="@dimen/itemAdvertCard_width"
     android:layout_height="@dimen/itemAdvertCard_height"
     android:layout_margin="5dp"
-
     app:cardCornerRadius="@dimen/itemAdvertCard_radius"
     app:strokeColor="@color/tabs_background"
     app:strokeWidth="1dp">
@@ -13,6 +12,6 @@
         android:id="@+id/item_advert_card_image_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/foto_free" />
+        android:scaleType="centerCrop" />
 
 </com.google.android.material.card.MaterialCardView>

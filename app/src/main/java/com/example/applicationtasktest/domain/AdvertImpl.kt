@@ -1,7 +1,7 @@
 package com.example.applicationtasktest.domain
 
 interface AdvertImpl {
-    fun createListAdvertEntity(advertEntity: AdvertEntity)
+    fun createListAdvertEntity()
     fun getListAdvertEntity(): List<AdvertEntity>
 
 }
